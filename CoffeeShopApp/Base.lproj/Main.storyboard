@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,145 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeShopApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7aJ-Cz-SIR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="922"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtF-rl-2iJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1396"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfO-nX-NWC" userLabel="Contact">
+                                                <rect key="frame" x="0.0" y="12" width="414" height="80"/>
+                                                <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Ph6-y7-1hp"/>
+                                                </constraints>
+                                                <string key="text">EMAIL: ElephantCoffee@gmail.com
+PHONE: 888-888-8888
+WEBSITE: www.elephantcoffee.com
+STORE HOURS: Mon-Sun, 7:30am - 9:30pm</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="COFFEE-LABEL" translatesAutoresizingMaskIntoConstraints="NO" id="9jU-1r-0hx">
+                                                <rect key="frame" x="0.0" y="100" width="153" height="128"/>
+                                                <color key="tintColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="153" id="Lgm-5s-9rn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ELEPHANT COFFEE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Siq-W0-T9Q">
+                                                <rect key="frame" x="161" y="100" width="253" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="lPo-J8-pSI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CW-XQ-jPE" userLabel="Details">
+                                                <rect key="frame" x="0.0" y="236" width="414" height="120"/>
+                                                <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="gph-vv-fpm"/>
+                                                </constraints>
+                                                <string key="text">ELEPHANT COFFEE was built up for families. A big funland is provided for kids. Kids frinedly food and drinks are supplied. What a fun time it will be to enjoy your coffee time with your kids! </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-7S-To0">
+                                                <rect key="frame" x="0.0" y="364" width="414" height="211"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="211" id="qTP-tg-rru"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttC-L2-ZKz" userLabel="Address">
+                                                <rect key="frame" x="0.0" y="583" width="414" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="hf9-PO-54f"/>
+                                                </constraints>
+                                                <string key="text">ADDRESS: 
+  C-1088,XUEYUANPAI,15#XUEYUANNANLU, HAIDIAN,BEIJING</string>
+                                                <fontDescription key="fontDescription" name="Arial-Black" family="Arial Black" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rY0-gd-B0g">
+                                                <rect key="frame" x="0.0" y="623" width="414" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="gBs-SB-b8U"/>
+                                                </constraints>
+                                            </mapView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ttC-L2-ZKz" firstAttribute="leading" secondItem="QtF-rl-2iJ" secondAttribute="leading" id="0VW-Cs-gBB"/>
+                                            <constraint firstAttribute="trailing" secondItem="Siq-W0-T9Q" secondAttribute="trailing" id="3LQ-lj-lSJ"/>
+                                            <constraint firstItem="6CW-XQ-jPE" firstAttribute="top" secondItem="Siq-W0-T9Q" secondAttribute="bottom" constant="8" id="53l-UV-CEA"/>
+                                            <constraint firstItem="6CW-XQ-jPE" firstAttribute="leading" secondItem="QtF-rl-2iJ" secondAttribute="leading" id="5UK-GF-EUk"/>
+                                            <constraint firstItem="rY0-gd-B0g" firstAttribute="leading" secondItem="QtF-rl-2iJ" secondAttribute="leading" id="6MS-y0-4zf"/>
+                                            <constraint firstItem="mfo-7S-To0" firstAttribute="leading" secondItem="QtF-rl-2iJ" secondAttribute="leading" id="85L-hf-HXa"/>
+                                            <constraint firstItem="Siq-W0-T9Q" firstAttribute="leading" secondItem="9jU-1r-0hx" secondAttribute="trailing" constant="8" id="9j0-Zr-8UI"/>
+                                            <constraint firstAttribute="trailing" secondItem="cfO-nX-NWC" secondAttribute="trailing" id="DhF-9w-cHY"/>
+                                            <constraint firstItem="cfO-nX-NWC" firstAttribute="width" secondItem="QtF-rl-2iJ" secondAttribute="width" id="Efw-W8-3M5"/>
+                                            <constraint firstItem="ttC-L2-ZKz" firstAttribute="top" secondItem="mfo-7S-To0" secondAttribute="bottom" constant="8" id="FPd-Ib-hGD"/>
+                                            <constraint firstAttribute="trailing" secondItem="rY0-gd-B0g" secondAttribute="trailing" id="Km1-3X-TDk"/>
+                                            <constraint firstItem="6CW-XQ-jPE" firstAttribute="width" secondItem="QtF-rl-2iJ" secondAttribute="width" id="PzJ-Z0-jET"/>
+                                            <constraint firstItem="cfO-nX-NWC" firstAttribute="leading" secondItem="QtF-rl-2iJ" secondAttribute="leading" id="QZc-Ws-XPh"/>
+                                            <constraint firstAttribute="trailing" secondItem="ttC-L2-ZKz" secondAttribute="trailing" id="UH5-iN-ySk"/>
+                                            <constraint firstItem="rY0-gd-B0g" firstAttribute="top" secondItem="ttC-L2-ZKz" secondAttribute="bottom" id="eUE-7n-2o9"/>
+                                            <constraint firstItem="cfO-nX-NWC" firstAttribute="top" secondItem="QtF-rl-2iJ" secondAttribute="top" constant="12" id="iBs-V9-JDv"/>
+                                            <constraint firstAttribute="trailing" secondItem="mfo-7S-To0" secondAttribute="trailing" id="rhZ-sy-1SF"/>
+                                            <constraint firstItem="mfo-7S-To0" firstAttribute="width" secondItem="6CW-XQ-jPE" secondAttribute="width" id="uC1-V0-mYE"/>
+                                            <constraint firstItem="rY0-gd-B0g" firstAttribute="width" secondItem="QtF-rl-2iJ" secondAttribute="width" id="vBp-xs-SxM"/>
+                                            <constraint firstItem="9jU-1r-0hx" firstAttribute="top" secondItem="cfO-nX-NWC" secondAttribute="bottom" constant="8" id="vb0-sg-9aw"/>
+                                            <constraint firstItem="Siq-W0-T9Q" firstAttribute="top" secondItem="cfO-nX-NWC" secondAttribute="bottom" constant="8" id="wAP-mj-M7d"/>
+                                            <constraint firstItem="mfo-7S-To0" firstAttribute="top" secondItem="6CW-XQ-jPE" secondAttribute="bottom" constant="8" id="wXV-HM-3gK"/>
+                                            <constraint firstItem="9jU-1r-0hx" firstAttribute="leading" secondItem="QtF-rl-2iJ" secondAttribute="leading" id="xKp-2x-61j"/>
+                                            <constraint firstItem="9jU-1r-0hx" firstAttribute="height" secondItem="Siq-W0-T9Q" secondAttribute="height" id="xPU-2k-LbH"/>
+                                            <constraint firstAttribute="trailing" secondItem="6CW-XQ-jPE" secondAttribute="trailing" id="yBf-Ed-rYR"/>
+                                            <constraint firstAttribute="bottom" secondItem="rY0-gd-B0g" secondAttribute="bottom" constant="473" id="ySN-ga-0Y6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.47019353790000001" blue="0.46561336479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QtF-rl-2iJ" firstAttribute="top" secondItem="7aJ-Cz-SIR" secondAttribute="top" id="0oA-Z0-Psd"/>
+                                    <constraint firstAttribute="trailing" secondItem="QtF-rl-2iJ" secondAttribute="trailing" id="Mvm-Zs-Wv4"/>
+                                    <constraint firstAttribute="bottom" secondItem="QtF-rl-2iJ" secondAttribute="bottom" id="UPu-Rh-PVc"/>
+                                    <constraint firstItem="QtF-rl-2iJ" firstAttribute="height" secondItem="7aJ-Cz-SIR" secondAttribute="height" priority="250" id="bci-yY-c79"/>
+                                    <constraint firstItem="QtF-rl-2iJ" firstAttribute="leading" secondItem="7aJ-Cz-SIR" secondAttribute="leading" id="tiq-z9-Zkx"/>
+                                    <constraint firstItem="QtF-rl-2iJ" firstAttribute="width" secondItem="7aJ-Cz-SIR" secondAttribute="width" id="u1a-7E-S99"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7aJ-Cz-SIR" secondAttribute="bottom" id="K0X-1Z-jgJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7aJ-Cz-SIR" secondAttribute="trailing" id="MDO-a6-8YJ"/>
+                            <constraint firstItem="7aJ-Cz-SIR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UfG-gK-fwx"/>
+                            <constraint firstItem="7aJ-Cz-SIR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="q9m-ws-54j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="imageView" destination="mfo-7S-To0" id="fT9-9x-Fim"/>
+                        <outlet property="mapView" destination="rY0-gd-B0g" id="hFS-DF-SPx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="COFFEE-LABEL" width="415" height="415"/>
+    </resources>
 </document>
